@@ -1,3 +1,3 @@
 # Mojo Zoo
 
-This repository will be used to experiment with diverse GPU kernels in Mojo.
+This repository is used to experiment with diverse GPU kernels in Mojo.
