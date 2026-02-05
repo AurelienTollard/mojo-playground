@@ -15,8 +15,8 @@ fn naive_matmul_gpu_kernel[
     N = rhs.shape[1]()
     K = rhs.shape[0]()
 
-    row = Int(block_dim.x * block_idx.x + thread_idx.x)
-    col = Int(block_dim.y * block_idx.y + thread_idx.y)
+    row = Int(block_dim.y * block_idx.y + thread_idx.y)
+    col = Int(block_dim.x * block_idx.x + thread_idx.x)
 
     acc: output.element_type = 0
     if row < M and col < N:

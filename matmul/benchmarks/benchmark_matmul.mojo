@@ -15,7 +15,7 @@ comptime N = 128
 comptime BLOCK_X = 16
 comptime BLOCK_Y = 16
 comptime WARMUP_ITERS = 10
-comptime BENCH_ITERS = 50
+comptime BENCH_ITERS = 100
 
 
 fn main() raises:
